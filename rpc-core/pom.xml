@@ -26,6 +26,10 @@
             <groupId>com.esotericsoftware</groupId>
             <artifactId>kryo</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.gforce</groupId>
+            <artifactId>rpc-common</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

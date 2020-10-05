@@ -1,15 +1,20 @@
-package com.gforce.serialize.kryo;
+package com.gforce.kryo;
 
+
+import com.esotericsoftware.kryo.Kryo;
+import com.esotericsoftware.kryo.io.Input;
+import com.esotericsoftware.kryo.io.Output;
+import com.gforce.Serializer;
+import com.gforce.exception.SerializeException;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.Serializable;
 
 /**
  * @author gforce
  * @create 2020/10/5 9:35 PM
  */
-public class KryoSerializer implements Serializable {
+public class KryoSerializer implements Serializer {
     private final ThreadLocal<Kryo> kryoThreadLocal = ThreadLocal.withInitial(() -> {
         Kryo kryo = new Kryo();
         return kryo;

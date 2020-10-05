@@ -1,4 +1,4 @@
-package com.gforce.serialize;
+package com.gforce;
 
 /**
  * @author gforce
