@@ -24,6 +24,13 @@
         <slf4j.version>1.7.25</slf4j.version>
     </properties>
 
+    <modules>
+        <module>rpc-core</module>
+        <module>rpc-server</module>
+        <module>rpc-client</module>
+        <module>rpc-common</module>
+    </modules>
+
     <dependencyManagement>
         <dependencies>
             <!-- lombok -->
